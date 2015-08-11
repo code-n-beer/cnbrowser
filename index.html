@@ -6,25 +6,16 @@
     </head>
 
     <body>
-        <div class="left col">
-            <p>hehebin</p>
-            <p>hehebin</p>
-            <p>hehebin</p>
-        </div>
-
-        <div class="right col">
-            <div class="header row">
-                <input type="url" id="urlbar" style="width: 100%;" onkeypress="return onUrlKeypress(event)"></input>
-            </div>
-
-            <div class="body row">
-                <webview id="webpage" src="https://duckduckgo.com" style="width: auto !important;"></webview>
-            </div>
-        </div>
-
         <script>
+            require("babel/register");
+
+            var React = require("react");
+            var MainView = require("./components/main-view.jsx");
+
             // find the url box and webview for the functions
             initialize();
+
+            React.render(React.createElement(MainView, null), document.body);
         </script>
     </body>
 </html>
