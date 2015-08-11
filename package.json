@@ -1,7 +1,7 @@
 {
   "name": "cnbrowser",
   "version": "0.1.0",
-  "main": "main.js",
+  "main": "bootstrapper.js",
   "description": "Modern browsers suck so I made my own.",
   "dependencies": {
     "babel": "^5.8.21",
