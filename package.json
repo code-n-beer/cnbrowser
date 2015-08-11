@@ -4,7 +4,9 @@
   "main": "main.js",
   "description": "Modern browsers suck so I made my own.",
   "dependencies": {
-    "electron-prebuilt": "^0.30.4"
+    "babel": "^5.8.21",
+    "electron-prebuilt": "^0.30.4",
+    "react": "^0.13.3"
   },
   "devDependencies": {},
   "scripts": {
