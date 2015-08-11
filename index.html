@@ -2,23 +2,10 @@
     <head>
         <title>cnbrowser</title>
         <link rel="stylesheet" type="text/css" href="style/main.css">
+        <script src="browser-functions.js"></script>
     </head>
 
     <body>
-        <script>
-
-            function onUrlKeyPress(e) {
-                if (e.charCode !== 13) {
-                    return;
-                }
-
-                var webView = document.getElementById("webpage");
-                var urlBox = document.getElementById("urlbar");
-
-                webView.src = urlBox.value;
-            }
-
-        </script>
         <div class="left col">
             <p>hehebin</p>
             <p>hehebin</p>
@@ -27,12 +14,17 @@
 
         <div class="right col">
             <div class="header row">
-                <input type="url" id="urlbar" style="width: 100%;" onkeypress="return onUrlKeyPress(event)"></input>
+                <input type="url" id="urlbar" style="width: 100%;" onkeypress="return onUrlKeypress(event)"></input>
             </div>
 
             <div class="body row">
                 <webview id="webpage" src="https://google.com" style="width: auto !important;"></webview>
             </div>
         </div>
+
+        <script>
+            // find the url box and webview for the functions
+            initialize();
+        </script>
     </body>
 </html>
