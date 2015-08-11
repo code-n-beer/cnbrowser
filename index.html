@@ -1,0 +1,66 @@
+<html>
+    <style>
+        .tabbar {
+            float: left;
+            width: 200px;
+            height: 100%;
+        }
+
+        .webcontent {
+            left: 200px;
+            right: 0;
+        }
+
+        body { margin: 0 }
+        .row, .col { overflow: hidden; position: absolute; }
+        .row { left: 0; right: 0; }
+        .col { top: 0; bottom: 0; }
+        .scroll-x { overflow-x: auto; }
+        .scroll-y { overflow-y: auto; }
+
+        .left.col {
+            width: 250px; 
+            height: auto;
+            background-color: #7f7f7f;
+            color: #dfdfdf;
+        }
+
+        .right.col { 
+            left: 250px; right: 0;
+        }
+
+        .header.row {
+            height: 40px;
+        }
+
+        .body.row {
+            top: 40px; bottom: 0;
+        }
+
+        .footer.row {
+            height: 50px; bottom: 0; line-height: 50px;
+        }
+    </style>
+
+    <head>
+        <title>cnbrowser</title>
+    </head>
+
+    <body>
+        <div class="left col">
+            <p>hehebin</p>
+            <p>hehebin</p>
+            <p>hehebin</p>
+        </div>
+
+        <div class="right col">
+            <div class="header row">
+                <input type="url" id="urlbar" style="width: 100%;"></input>
+            </div>
+
+            <div class="body row">
+                <webview id="webpage" src="https://google.com" style="width: auto !important;"></webview>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "cnbrowser",
+  "version": "0.1.0",
+  "main": "main.js",
+  "description": "Modern browsers suck so I made my own.",
+  "dependencies": {
+    "electron-prebuilt": "^0.30.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dwarfcrank",
+  "license": "WTFPL"
+}
