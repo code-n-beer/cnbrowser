@@ -1,15 +1,10 @@
-import React from "react";
-
-export class TabBarEntry extends React.Component {
-    render() {
-        return <p>hehebin</p>;
-    }
-}
+import React from 'react';
+import TabBarEntry from 'tab-bar-entry.js';
 
 export default class TabBar extends React.Component {
     render() {
         return (
-            <div className="left col">
+            <div className='left col'>
             <TabBarEntry />
             <TabBarEntry />
             <TabBarEntry />

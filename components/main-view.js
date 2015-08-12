@@ -1,8 +1,6 @@
-"use babel";
-
-import React from "react";
-import TabBar from "./tab-bar.jsx";
-import PageView from "./page-view.jsx";
+import React from 'react';
+import TabBar from './tab-bar.jsx';
+import PageView from './page-view.jsx';
 
 export default class MainView extends React.Component {
     render() {
