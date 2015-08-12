@@ -3,6 +3,12 @@
     "allowShebang": true
   },
 
+  "plugins": ["esformatter-quotes"],
+
+  "quotes": {
+      "type": "single"
+  },
+
   "indent" : {
     "value": "  ",
     "alignComments": true,
@@ -272,7 +278,7 @@
       "FunctionName" : 1,
       "IIFEClosingParentheses" : 0,
       "IfStatementConditionalOpening" : 1,
-      "IfStatementConditionalClosing" : 0,
+      "IfStatementConditionalClosing" : 1,
       "IfStatementOpeningBrace" : 1,
       "IfStatementClosingBrace" : 1,
       "ModuleSpecifierClosingBrace": 1,
@@ -362,7 +368,7 @@
       "FunctionDeclarationOpeningBrace" : 1,
       "FunctionDeclarationClosingBrace" : 1,
       "IIFEOpeningParentheses" : 0,
-      "IfStatementConditionalOpening" : 0,
+      "IfStatementConditionalOpening" : 1,
       "IfStatementConditionalClosing" : 1,
       "IfStatementOpeningBrace" : 1,
       "IfStatementClosingBrace" : 1,
