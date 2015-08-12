@@ -1,13 +1,12 @@
-'use babel';
 var webView;
 var urlBox;
 
-function initialize() {
+export function initialize() {
     webView = document.getElementById( 'webpage' );
     urlBox = document.getElementById( 'urlbar' );
 }
 
-function onUrlKeypress( e ) {
+export function onUrlKeypress( e ) {
     var url = urlBox.value;
     if ( e.charCode !== 13 ) {
         return;
@@ -22,11 +21,11 @@ function onUrlKeypress( e ) {
     loadUrl( url );
 }
 
-function loadUrl( url ) {
+export function loadUrl( url ) {
     webView.src = url;
 }
 
-function isUrlGood( url ) {
+export function isUrlGood( url ) {
     return ( url.startsWith( 'https://' ) || url.startsWith( 'http://' ) )
 }
 

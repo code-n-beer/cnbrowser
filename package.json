@@ -5,8 +5,14 @@
   "description": "Modern browsers suck so I made my own.",
   "dependencies": {
     "babel": "^5.8.21",
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
     "electron-prebuilt": "^0.30.4",
-    "react": "^0.13.3"
+    "extract-text-webpack-plugin": "^0.8.2",
+    "react": "^0.13.3",
+    "react-hot-loader": "^1.2.8",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
   },
   "devDependencies": {
     "esformatter": "^0.7.3",

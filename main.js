@@ -27,7 +27,12 @@ app.on( 'ready', function() {
   } );
 
   // and load the index.html of the app.
-  mainWindow.loadUrl( 'file://' + __dirname + '/index.html' );
+  //
+  if ( process.env.HOT ) {
+      mainWindow.loadUrl( 'file://' + __dirname + '/index-hot.html' );
+  } else {
+      mainWindow.loadUrl( 'file://' + __dirname + '/index.html' );
+  }
 
   // Open the devtools.
   //mainWindow.openDevTools();
