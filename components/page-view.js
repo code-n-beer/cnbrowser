@@ -1,5 +1,5 @@
 import React from 'react';
-import UrlBar from 'url-bar';
+import UrlBar from './url-bar';
 
 export default class PageView extends React.Component {
     render() {
