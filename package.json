@@ -9,11 +9,13 @@
     "react": "^0.13.3"
   },
   "devDependencies": {
+    "esformatter": "^0.7.3",
     "eslint-plugin-react": "^3.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node_modules/.bin/electron ."
+    "run": "node_modules/.bin/electron .",
+    "format": "node_modules/esformatter/bin/esformatter ./"
   },
   "author": "dwarfcrank",
   "license": "WTFPL"
