@@ -1,6 +1,7 @@
 import React from 'react';
-export class TabBarEntry extends React.Component {
+export default class TabBarEntry extends React.Component {
     render() {
+        console.log( '-------- tab bar entry -------' );
         return <p>hehebin</p>;
     }
 }

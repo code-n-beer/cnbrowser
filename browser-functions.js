@@ -1,3 +1,4 @@
+'use babel';
 var webView;
 var urlBox;
 
@@ -7,11 +8,10 @@ function initialize() {
 }
 
 function onUrlKeypress( e ) {
+    var url = urlBox.value;
     if ( e.charCode !== 13 ) {
         return;
     }
-
-    let url = urlBox.value;
 
     if ( !isUrlGood( url ) ) {
         // http is deprecated, but there should be a fallback to it somehow
