@@ -11,7 +11,8 @@
         "modules": true
     },
     "plugins": [
-        "eslint-plugin-react"
+        "eslint-plugin-react",
+        "react"
     ],
     "rules": {
         "brace-style": [ 2, "1tbs" ],
