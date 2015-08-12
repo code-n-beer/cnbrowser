@@ -5,7 +5,7 @@ It's a browser that was born from frustration, made with technologies that would
 ## How do I...
 ```
 npm install
-./node_modules/.bin/electron .
+npm run run
 ```
 
 
