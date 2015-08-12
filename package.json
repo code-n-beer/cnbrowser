@@ -8,10 +8,14 @@
     "electron-prebuilt": "^0.30.4",
     "react": "^0.13.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "esformatter": "^0.7.3",
+    "esformatter-quotes": "^1.0.3",
+    "eslint-plugin-react": "^3.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node_modules/.bin/electron ."
+    "run": "babel-node node_modules/.bin/electron ."
   },
   "author": "dwarfcrank",
   "license": "WTFPL"
