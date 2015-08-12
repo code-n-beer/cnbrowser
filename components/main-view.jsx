@@ -6,6 +6,11 @@ import PageView from "./page-view.jsx";
 
 export default class MainView extends React.Component {
     render() {
-        return (<div><TabBar /> <PageView /></div>);
+        return (
+            <div>
+                <TabBar />
+                <PageView />
+            </div>
+        );
     }
 }
